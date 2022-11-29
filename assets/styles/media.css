@@ -1,0 +1,205 @@
+@media (max-width:1810px) {
+    .starting-list_item-text{
+        flex-direction: column;
+    }
+    .find-present_main-img{
+        max-height: 400px;
+    }
+}
+@media (max-width:1750px) {
+    .find-present_main-img{
+        max-height: 350px;
+    }
+}
+@media (max-width:1655px) {
+    .find-present_main-img{
+        max-height: 278px;
+    }
+       
+    .burse-add_btn{
+        display: block;
+    }
+    .burse-header .header-green_btn{
+        display: none;
+    }
+}
+@media (max-width:1366px) {
+    section,.find-present_container,.burse-content_wrapper{
+        padding: 0 120px;
+    }
+    .starting-list {
+        margin: 0 auto;
+        gap: 20px;
+    }
+    .goods_item{
+        font-size: 12px;
+    }
+    .find-present_main-img{
+        max-height: 300px;
+    }
+}
+@media (max-width:1365px) {
+    .burse-header_text{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .burse-header .sub-title{
+       width: 100%;
+       text-align: center;
+    }
+    .burse-header_count{
+        margin-bottom: 20px;
+        border-bottom: 4px solid var(--maingreencolor);
+    }
+    .burse-count-wrapper{
+        flex-direction: column;
+        margin: 0;
+        border-left: none;
+    }
+    
+}
+@media (max-width:1230px) {
+    .find-present-titles{
+        justify-content: center;
+    }
+    .find-present_main-img{
+        max-height: 380px;
+        max-width: 700px;
+    }
+    .find-present_sub-title:first-of-type{
+        display: none;
+    }
+    .find-present_sub-title:last-of-type{
+        display: block;
+    }
+    .find-present-filters_title{
+        display: block;
+    }
+    .find-present_container{
+        padding-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .present-filters_filter-wrapper{
+        justify-content: center;
+    }
+}
+@media (max-width:1000px) {
+    .burse_slide-item:hover{
+        transform: scale(1.03)!important;
+    }
+
+}
+@media (max-width:980px) {
+    .burse_item-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .burse-slider{
+        display: none;
+    }
+    .top-master_slider{
+        display: none;
+    }
+    .top-master_wrapper{
+        display: grid;
+    }
+    .starting-list_item-text_numbers{
+        justify-content: center;
+    }
+    .level-two_title{
+        font-size: 40px;
+    }
+    .starting-list_item{
+        align-self: start;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .starting-list_item-text
+    {
+        justify-content: center;
+    }
+    .starting-list{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:0;
+    }
+    .starting-list_item-link_wrapper{
+        max-width: 125px;
+    }
+}
+@media (max-width:768px) {
+    .special-goods_wrapper{
+        column-gap: 0;
+    }
+    section,.find-present_container,.burse-content_wrapper
+    {
+        padding: 0 60px;
+    }
+    .linear-slider .slider-slide img{
+        height: 75px!important;
+    }
+    .titles-container{
+       text-align: center;
+    }
+    .starting-list{
+        display: none;
+    }
+    .goods_item{
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    .top-master_wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:600px) {
+    .advantages__content,.gold-hands__content{
+        padding: 0 20px;
+    }
+    .master-count{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .master-count__text{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .advantages__list,.gold-hands__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .advantages-item{
+        border: none!important;
+    }
+    #types-of-work_slider,#auction_slider{
+        display: none;
+    }
+    section,.find-present_container{
+        padding:0 30px;
+    }
+}
+@media (max-width:425px) {
+    .advantages__title,.gold-hands__title{
+        font-size: 40px;
+    }
+    .advantages__subtitle,.gold-hands__subtitle{
+        font-size: 16px;
+    }
+    section,.find-present_container,.burse-content_wrapper{
+        padding:0px;
+    }
+    .linear-slider .slider-slide img{
+        height: 50px!important;
+    }
+}

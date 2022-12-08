@@ -1,14 +1,22 @@
 
-// Боковое меню
-const aside_menu = document.querySelector('#user-aside_menu');
-//Получение html
-let html = document.querySelector('html');
+// выдвигающийся хедер при скроле
+const body = document.querySelector('body');
+const html = document.querySelector('html');
+const aside_header = document.querySelector('.main-aside-header');
+const aside_footer = document.querySelector('.main-aside-footer');
+window.addEventListener('scroll',() =>{
+    let scrollTop = html.scrollTop || body && body.scrollTop || 0;
+    scrollTop -= html.clientTop; 
+    if(!aside_header.classList.contains('active') && scrollTop>=165){
+      aside_header.classList.toggle('active');
+      aside_footer.classList.toggle('active');
+    }
+    else if(aside_header.classList.contains('active') && scrollTop<165){
+      aside_header.classList.toggle('active');
+      aside_footer.classList.toggle('active');
+    }
+})
 
-// функция перепросчитывания высоты бокового меню
-function changeHeightMenu(e){
-aside_menu.style.height = html.offsetHeight+"px";
-console.log(html.offsetHeight);
-}
 
 // Адаптив расположения кнопок у свипера
 let btn_wrapper  = document.querySelectorAll(".btn-wrapper");
@@ -77,7 +85,7 @@ const swiper = new Swiper('.slider', {
           slidesPerView: '4',
           slidesPerGroup: 4,
         },
-         600:{
+         768:{
           slidesPerView: '3',
           slidesPerGroup: 3,
         },
@@ -117,15 +125,15 @@ const swiper = new Swiper('.slider', {
       breakpoints:{
         1600:{
           slidesPerView: '5',
-          slidesPerGroup: 4,
+          slidesPerGroup: 5,
         },
         1366:{
           slidesPerView: '4',
           slidesPerGroup: 4,
         },
         980:{
-          slidesPerView: '4',
-          slidesPerGroup: 4,
+          slidesPerView: '3',
+          slidesPerGroup: 3,
         },
          900:{
           slidesPerView: '3',
@@ -167,15 +175,15 @@ const swiper = new Swiper('.slider', {
       breakpoints:{
         1600:{
           slidesPerView: '5',
-          slidesPerGroup: 4,
+          slidesPerGroup: 5,
         },
         1366:{
           slidesPerView: '4',
           slidesPerGroup: 4,
         },
         980:{
-          slidesPerView: '4',
-          slidesPerGroup: 4,
+          slidesPerView: '3',
+          slidesPerGroup: 3,
         },
          900:{
           slidesPerView: '3',
@@ -225,8 +233,8 @@ const swiper = new Swiper('.slider', {
           slidesPerGroup: 4,
         },
         980:{
-          slidesPerView: '4',
-          slidesPerGroup: 4,
+          slidesPerView: '3',
+          slidesPerGroup: 3,
         },
          900:{
           slidesPerView: '3',
@@ -286,6 +294,7 @@ const swiper = new Swiper('.slider', {
     slidesPerView: 2,
     slidesPerGroup: 2,
     spaceBetween:20,
+    grid:true,
     freeMode: true,
     grid: {
       rows: 2,
@@ -295,6 +304,10 @@ const swiper = new Swiper('.slider', {
       1700:{
         slidesPerView: '3',
         slidesPerGroup: 3,
+        grid: {
+          rows: 2,
+          fill: "row",
+        },
       },
       980:{
         slidesPerView: '2',
@@ -312,19 +325,44 @@ const swiper = new Swiper('.slider', {
     },
   });
 
-
+// Cлайдер будь в теме
+  const swiper7 = new Swiper('.topic__slider', {
+    // Направление слайдера
+    direction: 'horizontal',
+    lazy: true,
+    grabCursor: true,
+    slidesPerView: '1',
+    slidesPerGroup: 1,
+    spaceBetween:40,
+      // Инициализация кнопок слайдера
+      navigation: {
+        nextEl: '.main-btn-prev',
+        prevEl: '.main-btn-next',
+      },
+      breakpoints:{
+        1700:{
+          slidesPerView: '3',
+          slidesPerGroup: 3,
+        },
+        1050:{
+          slidesPerView: '2',
+          slidesPerGroup: 2,
+        },
+       
+      },
+      // Авто переключение слайдов
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+  });
                                                         // Вызовы функций
 
 
-// Вызовы функий определения ширины и высоты
-document.addEventListener("DOMContentLoaded", function(){
-  changeHeightMenu();
-})
-changeHeightMenu();
+
 resizeSliderBtns()
 // Вызов всех функций переопределения через resize 
 window.addEventListener('resize',()=>{
-  changeHeightMenu();
   resizeSliderBtns()
 })
 

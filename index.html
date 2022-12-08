@@ -21,6 +21,97 @@
     <title>Пуговки</title>
 </head>
 <body >
+    <!-- aside-header -->
+    <aside class="main-aside-header">
+        <img src="assets/images/header/logo.svg" alt="" class="main-aside-header__logo">
+        <button class="main-aside-header__btn main-aside-header__btn_orange">
+            <img src="assets/images/header/catalog-logo-active.svg" alt="">
+        </button>
+        <button class="main-aside-header__btn">
+            <img src="assets/images/icons/sort.svg" alt="">
+        </button>
+        <div class="seacrh-wrapper main-aside-header__seacrh">
+            <input type="text" class="search_text" placeholder="Искать уникальные изделиия">
+            <button class="search_btn" type="button">
+                <span class="search_icon">
+                    <img src="assets/images/icons/seacrh-icon.svg" alt="">
+                </span>
+            </button>
+        </div>
+        <div class="main-header-user-container  main-aside-header__user">
+            <menu class="main-header-user__menu">
+                <li class="main-header-user__item">
+                    <button class="main-header-user__btn">
+                        <img src="assets/images/icons/heart.svg" alt="">
+                    </button>
+                    <span class="notification notification-count">
+                    </span>
+                </li>
+                <li class="main-header-user__item">
+                    <button class="main-header-user__btn">
+                        <img src="assets/images/icons/message.svg" alt="">
+                    </button>
+                    <span class="notification notification-count">
+                    </span>
+                </li>
+                <li class="main-header-user__item">
+                    <button class="main-header-user__btn">
+                        <img src="assets/images/icons/notification.svg" alt="">
+                    </button>
+                    <span class="notification notification-count">
+                        3
+                    </span>
+                </li>
+                <li class="main-header-user__item">
+                    <button class="main-header-user__btn main-header-user__btn_green">
+                        <img src="assets/images/icons/Plus.svg" alt="">
+                    </button>
+                </li>
+            </menu>
+            <div class="main-header-user__avatar-container">
+                <img src="assets/images/header/user-avatar.png" alt="" class="main-header-user__avatar">
+                <img src="assets/images/icons/caret-down-fill.svg" alt="" class="main-header-user__arrow">
+            </div>
+        </div>
+    </aside>
+    <!-- aside-footer -->
+    <aside class="main-aside-footer">
+        <a class="main-aside-footer_btn main-aside-footer__btn_to-top" href="#main-header">
+            <img src="assets/images/icons/up-arrow.svg" alt="">
+        </a>
+        <menu class="main-aside-footer__menu">
+            <button class="main-aside-footer__btn main-aside-footer__btn_home">
+                <img src="assets/images/icons/home.svg" alt="" class="main-aside-footer__img">
+            </button>
+            <button class="main-aside-footer__btn main-aside-footer__btn_catalog">
+                <img src="assets/images/header/catalog-logo.svg" alt="" class="main-aside-footer__img">
+                    <span class="main-aside-footer__text">
+                        Каталог
+                    </span>
+            </button>
+            <button class="main-aside-footer__btn">
+                <img src="assets/images/header/burse.svg" alt="" class="main-aside-footer__img">
+                <span class="main-aside-footer__text">
+                    Биржа заявок
+                </span>
+            </button>
+            <button class="main-aside-footer__btn">
+                <img src="assets/images/header/masters.svg" alt="" class="main-aside-footer__img">
+                <span class="main-aside-footer__text">
+                    Мастера
+                </span>
+            </button>
+            <button class="main-aside-footer__btn">
+                <img src="assets/images/header/auctions-logo.svg" alt="" class="main-aside-footer__img">
+                <span class="main-aside-footer__text">
+                    Аукционы
+                </span>
+            </button>
+            <button class="main-aside-footer__btn main-aside-footer__btn_more">
+                <img src="assets/images/icons/more.svg" alt="" class="main-aside-footer__img">
+            </button>
+        </menu>
+    </aside>
     <!-- header -->
     <header class="main-header" id="main-header">
         <div class="main-header_item">
@@ -28,39 +119,42 @@
             <img src="assets/images/header/logo.svg" alt="" class="main-header_logo d-none">
             <img src="assets/images/header/logo-group.svg" alt="" class="main-header_text">
             <!-- navigation -->
-            <nav class="main-header_navigation">
-                <ul class="main-header_navigation-list m-0 p-0">
-                    <li class="navigation-list_item active">
-                            <img src="assets/images/header/catalog-logo-active.svg" alt="" class="navigation-list_item-logo">
-                            <span class="navigation-list_item-text">Каталог Изделий</span>
-                    </li>
-                    <li class="navigation-list_item">
-                        <a href="#" class="navigation-list_item-link">
-                            <img src="assets/images/header/auctions-logo.svg" alt="" class="navigation-list_item-logo">
-                            <span class="navigation-list_item-text">Аукционы</span>
-                        </a>
-                    </li>
-                    <li class="navigation-list_item">
-                        <a href="#" class="navigation-list_item-link">
-                            <img src="assets/images/header/burse.svg" alt="" class="navigation-list_item-logo">
-                            <span class="navigation-list_item-text">Биржа заявок</span>
-                        </a>
-                    </li>
-                    <li class="navigation-list_item">
-                        <a href="#" class="navigation-list_item-link">
-                            <img src="assets/images/header/masters.svg" alt="" class="navigation-list_item-logo">
-                            <span class="navigation-list_item-text">Мастера</span>
-                        </a>
-                    </li>
-                    <li class="navigation-list_item">
-                            <span class="navigation-list_item-text">
-                                Информация
-                                <img src="assets/images/icons/caret-down-fill.svg" alt="" class="navigation-list_item-arrow arrow-icon">
-                            </span>
-                    </li>
-                </ul>
-            </nav>
         </div>
+        <nav class="main-header_navigation">
+            <ul class="main-header_navigation-list m-0 p-0">
+                <li class="navigation-list_item active">
+                        <img src="assets/images/header/catalog-logo-active.svg" alt="" class="navigation-list_item-logo">
+                        <span class="navigation-list_item-text"> 
+                            <span class="deletable-word">Каталог Изделий</span> 
+                            <span class="showing-word">Изделия</span>
+                        </span>
+                </li>
+                <li class="navigation-list_item">
+                    <a href="#" class="navigation-list_item-link">
+                        <img src="assets/images/header/auctions-logo.svg" alt="" class="navigation-list_item-logo">
+                        <span class="navigation-list_item-text">Аукционы</span>
+                    </a>
+                </li>
+                <li class="navigation-list_item">
+                    <a href="#" class="navigation-list_item-link">
+                        <img src="assets/images/header/burse.svg" alt="" class="navigation-list_item-logo">
+                        <span class="navigation-list_item-text">Биржа заявок</span>
+                    </a>
+                </li>
+                <li class="navigation-list_item">
+                    <a href="#" class="navigation-list_item-link">
+                        <img src="assets/images/header/masters.svg" alt="" class="navigation-list_item-logo">
+                        <span class="navigation-list_item-text">Мастера</span>
+                    </a>
+                </li>
+                <li class="navigation-list_item">
+                        <span class="navigation-list_item-text">
+                            Информация
+                            <img src="assets/images/icons/caret-down-fill.svg" alt="" class="navigation-list_item-arrow arrow-icon">
+                        </span>
+                </li>
+            </ul>
+        </nav>
         <div class="main-header_item">
             <!-- search -->
             <div class="seacrh-wrapper">
@@ -71,67 +165,103 @@
                     </span>
                 </button>
             </div>
-            <!-- aside -->
-            <div class="user_container bg-white position-relative">
-                <div class="avatar-container position-relative">
-                    <div class="avatar_wrapper position-relative">
-                        <img src="assets/images/header/user-avatar.png" alt="" class="user-avatar">
-                        <img src="assets/images/icons/caret-down-fill.svg" alt="" class="avatar-arrow arrow-icon position-absolute">
-                    </div>
-                </div>
-                <!-- aside-menu -->
-                <div class="user-aside_menu position-absolute" id="user-aside_menu">
-                    <!-- aside-menu_wrapper -->
-                    <div class="aside_menu-wrapper">
-                        <!--aside-btns -->
-                        <ul class="aside_menu-list">
-                            <li class="aside_menu-list_item" id="balance">
-                                <button type="button" class="aside-btn btn-green">
-                                    <span class="balance-text">280р.</span>
-                                </button>
-                            </li>
-                            <li class="aside_menu-list_item">
-                                <button type="button" class="aside-btn btn-green">
-                                    <img src="assets/images/icons/plus.svg" alt="" class="aside-btn_icon"> 
-                                </button>
-                            </li>
-                            <li class="aside_menu-list_item">
-                                <span class="notification notification-count">
-                                </span>
-                                <button type="button" class="aside-btn">
-                                    <img src="assets/images/icons/heart.svg" alt="" class="aside-btn_icon">
-                                </button>
-                            </li>
-                            <li class="aside_menu-list_item">
-                                <span class="notification notification-count">
-                                </span>
-                                <button type="button" class="aside-btn">
-                                    <img src="assets/images/icons/message.svg" alt="" class="aside-btn_icon"> 
-                                </button>
-                            </li>
-                            <li class="aside_menu-list_item">
-                                <span class="notification notification-count">
-                                    5
-                                </span>
-                                <button type="button" class="aside-btn ">
-                                    <img src="assets/images/icons/notification.svg" alt="" class="aside-btn_icon"> 
-                                </button>
-                            </li>
-                            <li class="aside_menu-list_item">
-                                <button type="button" class="aside-btn ">
-                                    <img src="assets/images/icons/more.svg" alt="" class="aside-btn_icon"> 
-                                </button>
-                            </li>
-                        </ul>
-                        <!-- aside-to-top-btn -->                     
-                            <a href="#main-header" class="aside-btn btn-dark">
-                                <img src="assets/images/icons/up-arrow.svg" alt="" class="aside-btn_icon">
-                            </a>
-                    </div>
-                </div>
+           
+        </div>
+        <div class="main-header_item main-header-user-container">
+            <menu class="main-header-user__menu">
+                <li class="main-header-user__item">
+                    <button class="main-header-user__btn">
+                        <img src="assets/images/icons/heart.svg" alt="">
+                    </button>
+                    <span class="notification notification-count">
+                    </span>
+                </li>
+                <li class="main-header-user__item">
+                    <button class="main-header-user__btn">
+                        <img src="assets/images/icons/message.svg" alt="">
+                    </button>
+                    <span class="notification notification-count">
+                    </span>
+                </li>
+                <li class="main-header-user__item">
+                    <button class="main-header-user__btn">
+                        <img src="assets/images/icons/notification.svg" alt="">
+                    </button>
+                    <span class="notification notification-count">
+                        3
+                    </span>
+                </li>
+                <li class="main-header-user__item">
+                    <button class="main-header-user__btn main-header-user__btn_green">
+                        <img src="assets/images/icons/Plus.svg" alt="">
+                    </button>
+                </li>
+            </menu>
+            <div class="main-header-user__avatar-container">
+                <img src="assets/images/header/user-avatar.png" alt="" class="main-header-user__avatar">
+                <img src="assets/images/icons/caret-down-fill.svg" alt="" class="main-header-user__arrow">
             </div>
         </div>
     </header>
+     <!-- aside -->
+    <div class="user_container bg-white">
+        <div class="avatar-container position-relative">
+            <div class="avatar_wrapper position-relative">
+                <img src="assets/images/header/user-avatar.png" alt="" class="user-avatar">
+                <img src="assets/images/icons/caret-down-fill.svg" alt="" class="avatar-arrow arrow-icon position-absolute">
+            </div>
+        </div>
+        <!-- aside-menu -->
+        <div class="user-aside_menu position-absolute" id="user-aside_menu">
+            <!-- aside-menu_wrapper -->
+            <div class="aside_menu-wrapper">
+                <!--aside-btns -->
+                <ul class="aside_menu-list">
+                    <li class="aside_menu-list_item" id="balance">
+                        <button type="button" class="aside-btn btn-green">
+                            <span class="balance-text">280р.</span>
+                        </button>
+                    </li>
+                    <li class="aside_menu-list_item">
+                        <button type="button" class="aside-btn btn-green">
+                            <img src="assets/images/icons/plus.svg" alt="" class="aside-btn_icon"> 
+                        </button>
+                    </li>
+                    <li class="aside_menu-list_item">
+                        <span class="notification notification-count">
+                        </span>
+                        <button type="button" class="aside-btn">
+                            <img src="assets/images/icons/heart.svg" alt="" class="aside-btn_icon">
+                        </button>
+                    </li>
+                    <li class="aside_menu-list_item">
+                        <span class="notification notification-count">
+                        </span>
+                        <button type="button" class="aside-btn">
+                            <img src="assets/images/icons/message.svg" alt="" class="aside-btn_icon"> 
+                        </button>
+                    </li>
+                    <li class="aside_menu-list_item">
+                        <span class="notification notification-count">
+                            5
+                        </span>
+                        <button type="button" class="aside-btn ">
+                            <img src="assets/images/icons/notification.svg" alt="" class="aside-btn_icon"> 
+                        </button>
+                    </li>
+                    <li class="aside_menu-list_item">
+                        <button type="button" class="aside-btn ">
+                            <img src="assets/images/icons/more.svg" alt="" class="aside-btn_icon"> 
+                        </button>
+                    </li>
+                </ul>
+                <!-- aside-to-top-btn -->                     
+                    <a href="#main-header" class="aside-btn btn-dark">
+                        <img src="assets/images/icons/up-arrow.svg" alt="" class="aside-btn_icon">
+                    </a>
+            </div>
+        </div>
+    </div>
     <!-- main -->
     <main class="container-fluid p-0 m-0 main-container">
         <section class="slider slider-style linear-slider" id="main-slider">
@@ -180,6 +310,58 @@
                     Интернет-магазин авторских изделий, созданных мастерами со всей страны
                 </p>
             </hgroup>
+            <h2 class="starting__title starting__title_adaptive">
+                Ярмарка авторских изделий, созданных мастерами со всей страны
+            </h2>
+            <img src="assets/images/advantages/Rectangle.png" alt="" class="starting__img">
+            <menu class="starting__menu menu-list">
+                <li class="menu__item menu__item_search">
+                    <input type="text" class="menu__search-input" placeholder="Поиск изделий">
+                    <button class="menu__search-btn" type="button">
+                        <img src="assets/images/icons/seacrh-icon.svg" alt="" class="menu__icon">
+                    </button>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__btn" type="button">
+                        <img src="assets/images/header/catalog-logo.svg" alt="" class="menu__icon">
+                        <span class="menu__text">
+                            Каталог изделий
+                        </span>
+                    </button>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__btn" type="button">
+                        <img src="assets/images/header/auctions-logo.svg" alt="" class="menu__icon">
+                        <span class="menu__text">
+                            Аукционы
+                        </span>
+                    </button>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__btn" type="button">
+                        <img src="assets/images/icons/starblack.svg" alt="" class="menu__icon">
+                        <span class="menu__text">
+                            Заказать изделие
+                        </span>
+                    </button>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__btn" type="button">
+                        <img src="assets/images/icons/message.svg" alt="" class="menu__icon">
+                        <span class="menu__text">
+                            Найти Мастера
+                        </span>
+                    </button>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__btn" type="button">
+                        <img src="assets/images/icons/starblack.svg" alt="" class="menu__icon">
+                        <span class="menu__text">
+                            Подобрать подарок
+                        </span>
+                    </button>
+                </li>
+            </menu>
             <ul class="starting-list p-0">
                 <li class="starting-list_item">
                     <div class="starting-list_item-img">
@@ -391,7 +573,7 @@
         </section>
                                                 <!-- Разделяющая линия -->
         <div class="underline type-1"></div>
-                                                    <!-- Аукцион -->
+                                                <!-- Аукцион -->
         <section id="auction">
             <header class="auction-header section-header">
                 <div class="auction-titles">
@@ -1068,32 +1250,32 @@
             </div>
         </section>         
             <div class="underline type-2"></div>
-                                                    <!-- Супер цены -->
+                                                <!-- Супер цены -->
         <section class="special-prises">
             <header class="super-price-header section-header">
                 <div class="super-price-titles">
                     <h2 class="super-price_title level-two_title m-0 p-0">
                         Изделия по супер-цене
                     </h2>
-                    <img src="assets/images/icons/auction.png" alt="">
+                    <img src="assets/images/super-price/flame.svg" alt="">
                 </div>
-                <div class="section-header_btns-wrapper">
-                    <div class="section-header_switcher-wrapper">
-                        <button class="section-header_switcher-btn active" type="button">
-                            Изделия со скидкой
-                        </button>
-                        <button class="section-header_switcher-btn" type="button">
-                            Изделия до 500р
-                        </button>
-                        <button class="section-header_switcher-btn" type="button">
-                            Изделия от 500р до 1000р    
-                        </button>
-                    </div>
+            </header>
+            <div class="section-header_btns-wrapper">
+                <div class="section-header_switcher-wrapper">
+                    <button class="section-header_switcher-btn active" type="button">
+                        Изделия со скидкой
+                    </button>
+                    <button class="section-header_switcher-btn" type="button">
+                        Изделия до 500р
+                    </button>
+                    <button class="section-header_switcher-btn" type="button">
+                        Изделия от 500р до 1000р    
+                    </button>
                     <a class="section-header_btn">
                         Все cкидки
                     </a>
                 </div>
-            </header>
+            </div>
             <div  id="super-price_slider" class="slider-style">
                 <div class="swiper-wrapper slider-wrapper">
                     <!-- Slides -->
@@ -1862,10 +2044,202 @@
                         </button>
                     </div>
             </div>
+            <div class="super-price-goods_wrapper">
+                <div class="goods_item auction_item auction_item-inactive">                        
+                    <div class="goods_item-main-content">
+                
+                            <div class="goods_item_img-wrapper">
+                            <img src="assets/images/auction/Photo.png" alt="">
+                            <div class="follow-wrapper active">
+                                <img src="assets/images/auction/red-heart.svg" alt="" class="red-heart">
+                                <img src="assets/images/auction/heart.svg" alt=""   class="heart">
+                            </div>
+                        </div>
+                    
+                        <div class="goods_item__info-wrapper">
+                            <div class="goods_item__info-type-of-goods">
+                                Аукцион
+                            </div>
+                            <div class="goods_item__info-bet-status">
+                                Начальная ставка
+                            </div>
+                            <div class="goods_item__info-name-goods active">
+                                Брошь цветок
+                            </div>
+                            <div class="goods_item__info-bet-count start-price">
+                                <span class="bet-arrow">
+
+                                </span>
+                                    800р.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="master-info-container">
+                        <div class="date-wrapper">
+                            <span class="date-status">
+                                Старт
+                            </span>
+                            <span class="date-day">
+                                10.03.2020
+                            </span>
+                            <span class="date-time">
+                                в 17:30
+                            </span>
+                        </div>
+                    </div>
+                    <div class="master-info">
+                        <div class="master-info_avatar">
+                            <img src="assets/images/header/user-avatar.png" alt="">
+                        </div>
+                        <div class="master-info_master-nickname">
+                            MANYAKHANDMADA
+                        </div>
+                        <div class="master-info_post-stats">
+                            <div class="master-info_master-likes">
+                                <img src="assets/images/icons/like.svg" alt="">
+                                <span class="master-info_master-likes-count">
+                                    39
+                                </span>
+                            </div>
+                            <div class="master-info_master-views">
+                                <img src="assets/images/icons/views.svg" alt="">
+                                <span class="master-info_master-views-count">
+                                    1562
+                                </span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="goods_item">                        
+                    <div class="goods_item-main-content">
+                
+                            <div class="goods_item_img-wrapper">
+                            <img src="assets/images/auction/Photo.png" alt="">
+                            <div class="follow-wrapper active">
+                                <img src="assets/images/auction/red-heart.svg" alt="" class="red-heart">
+                                <img src="assets/images/auction/heart.svg" alt=""   class="heart">
+                            </div>
+                            <div class="discount-wrapper">
+                                -20%
+                            </div>
+                        </div>
+                    
+                        <div class="goods_item__info-wrapper goods_item__info-wrapper--1row">
+                            <div class="goods_item__info-name-goods active">
+                                Брошь цветок
+                            </div>
+                            <div class="goods_item__info-price_wrapper">
+                                <div class="goods_item__info-price_new-price price-discounted">
+                                    <span class="hot-price_icon">
+                                        <img src="assets/images/super-price/flame.svg" alt="">
+                                    </span>
+                                        800р.
+                                </div>
+                                <span class="goods_item__info-price_old-price">
+                                    800р.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="master-info-container">                                
+                        <div class="master-info">
+                            <div class="master-info_avatar">
+                                <img src="assets/images/header/user-avatar.png" alt="">
+                            </div>
+                            <div class="master-info_master-nickname-wrapper">
+                                <div class="master-info_master-nickname pro-status">
+                                    MANYAKHANDMADA
+                                </div>
+                                <div class="status-wrapper">
+                                    PRO
+                                </div>
+                            </div>
+                            <div class="master-info_post-stats">
+                                <div class="master-info_master-likes">
+                                    <img src="assets/images/icons/like.svg" alt="">
+                                    <span class="master-info_master-likes-count">
+                                        39
+                                    </span>
+                                </div>
+                                <div class="master-info_master-views">
+                                    <img src="assets/images/icons/views.svg" alt="">
+                                    <span class="master-info_master-views-count">
+                                        1562
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="goods_item">                        
+                    <div class="goods_item-main-content">
+                
+                            <div class="goods_item_img-wrapper">
+                            <img src="assets/images/auction/Ph2oto.png" alt="">
+                            <div class="follow-wrapper active">
+                                <img src="assets/images/auction/red-heart.svg" alt="" class="red-heart">
+                                <img src="assets/images/auction/heart.svg" alt=""   class="heart">
+                            </div>
+                            <div class="discount-wrapper">
+                                -20%
+                            </div>
+                        </div>
+                    
+                        <div class="goods_item__info-wrapper goods_item__info-wrapper--1row">
+                            <div class="goods_item__info-name-goods active">
+                                Брошь цветок
+                            </div>
+                            <div class="goods_item__info-price_wrapper">
+                                <div class="goods_item__info-price_new-price price-discounted">
+                                    <span class="hot-price_icon">
+                                        <img src="assets/images/super-price/flame.svg" alt="">
+                                    </span>
+                                        800р.
+                                </div>
+                                <span class="goods_item__info-price_old-price">
+                                    800р.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="master-info-container">                                
+                        <div class="master-info">
+                            <div class="master-info_avatar">
+                                <img src="assets/images/header/user-avatar.png" alt="">
+                            </div>
+                            <div class="master-info_master-nickname-wrapper">
+                                <div class="master-info_master-nickname pro-status">
+                                    MANYAKHANDMADA
+                                </div>
+                                <div class="status-wrapper">
+                                    PRO
+                                </div>
+                            </div>
+                            <div class="master-info_post-stats">
+                                <div class="master-info_master-likes">
+                                    <img src="assets/images/icons/like.svg" alt="">
+                                    <span class="master-info_master-likes-count">
+                                        39
+                                    </span>
+                                </div>
+                                <div class="master-info_master-views">
+                                    <img src="assets/images/icons/views.svg" alt="">
+                                    <span class="master-info_master-views-count">
+                                        1562
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+
+                </div>
+            </div>
+            <button class="pagination_btn-more" type="button">Показать еще</button>
         </section>
-                                                        <!-- Разделяющая линия -->
+                                                <!-- Разделяющая линия -->
         <div class="underline type-3"></div>
-                                                    <!-- Что-то новое -->
+                                                <!-- Что-то новое -->
         <section class="new-goods">
             <header class="new-goods-header section-header">
                 <div class="new-goods-titles">
@@ -2907,8 +3281,200 @@
                         </button>
                 </div>
             </div>
+            <div class="new-goods_wrapper">
+                <div class="goods_item auction_item auction_item-inactive">                        
+                    <div class="goods_item-main-content">
+                
+                            <div class="goods_item_img-wrapper">
+                            <img src="assets/images/auction/Photo.png" alt="">
+                            <div class="follow-wrapper active">
+                                <img src="assets/images/auction/red-heart.svg" alt="" class="red-heart">
+                                <img src="assets/images/auction/heart.svg" alt=""   class="heart">
+                            </div>
+                        </div>
+                    
+                        <div class="goods_item__info-wrapper">
+                            <div class="goods_item__info-type-of-goods">
+                                Аукцион
+                            </div>
+                            <div class="goods_item__info-bet-status">
+                                Начальная ставка
+                            </div>
+                            <div class="goods_item__info-name-goods active">
+                                Брошь цветок
+                            </div>
+                            <div class="goods_item__info-bet-count start-price">
+                                <span class="bet-arrow">
+
+                                </span>
+                                    800р.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="master-info-container">
+                        <div class="date-wrapper">
+                            <span class="date-status">
+                                Старт
+                            </span>
+                            <span class="date-day">
+                                10.03.2020
+                            </span>
+                            <span class="date-time">
+                                в 17:30
+                            </span>
+                        </div>
+                    </div>
+                    <div class="master-info">
+                        <div class="master-info_avatar">
+                            <img src="assets/images/header/user-avatar.png" alt="">
+                        </div>
+                        <div class="master-info_master-nickname">
+                            MANYAKHANDMADA
+                        </div>
+                        <div class="master-info_post-stats">
+                            <div class="master-info_master-likes">
+                                <img src="assets/images/icons/like.svg" alt="">
+                                <span class="master-info_master-likes-count">
+                                    39
+                                </span>
+                            </div>
+                            <div class="master-info_master-views">
+                                <img src="assets/images/icons/views.svg" alt="">
+                                <span class="master-info_master-views-count">
+                                    1562
+                                </span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="goods_item">                        
+                    <div class="goods_item-main-content">
+                
+                            <div class="goods_item_img-wrapper">
+                            <img src="assets/images/auction/Photo.png" alt="">
+                            <div class="follow-wrapper active">
+                                <img src="assets/images/auction/red-heart.svg" alt="" class="red-heart">
+                                <img src="assets/images/auction/heart.svg" alt=""   class="heart">
+                            </div>
+                            <div class="discount-wrapper">
+                                -20%
+                            </div>
+                        </div>
+                    
+                        <div class="goods_item__info-wrapper goods_item__info-wrapper--1row">
+                            <div class="goods_item__info-name-goods active">
+                                Брошь цветок
+                            </div>
+                            <div class="goods_item__info-price_wrapper">
+                                <div class="goods_item__info-price_new-price price-discounted">
+                                    <span class="hot-price_icon">
+                                        <img src="assets/images/super-price/flame.svg" alt="">
+                                    </span>
+                                        800р.
+                                </div>
+                                <span class="goods_item__info-price_old-price">
+                                    800р.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="master-info-container">                                
+                        <div class="master-info">
+                            <div class="master-info_avatar">
+                                <img src="assets/images/header/user-avatar.png" alt="">
+                            </div>
+                            <div class="master-info_master-nickname-wrapper">
+                                <div class="master-info_master-nickname pro-status">
+                                    MANYAKHANDMADA
+                                </div>
+                                <div class="status-wrapper">
+                                    PRO
+                                </div>
+                            </div>
+                            <div class="master-info_post-stats">
+                                <div class="master-info_master-likes">
+                                    <img src="assets/images/icons/like.svg" alt="">
+                                    <span class="master-info_master-likes-count">
+                                        39
+                                    </span>
+                                </div>
+                                <div class="master-info_master-views">
+                                    <img src="assets/images/icons/views.svg" alt="">
+                                    <span class="master-info_master-views-count">
+                                        1562
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="goods_item">                        
+                    <div class="goods_item-main-content">
+                
+                            <div class="goods_item_img-wrapper">
+                            <img src="assets/images/auction/Ph2oto.png" alt="">
+                            <div class="follow-wrapper active">
+                                <img src="assets/images/auction/red-heart.svg" alt="" class="red-heart">
+                                <img src="assets/images/auction/heart.svg" alt=""   class="heart">
+                            </div>
+                            <div class="discount-wrapper">
+                                -20%
+                            </div>
+                        </div>
+                    
+                        <div class="goods_item__info-wrapper goods_item__info-wrapper--1row">
+                            <div class="goods_item__info-name-goods active">
+                                Брошь цветок
+                            </div>
+                            <div class="goods_item__info-price_wrapper">
+                                <div class="goods_item__info-price_new-price price-discounted">
+                                    <span class="hot-price_icon">
+                                        <img src="assets/images/super-price/flame.svg" alt="">
+                                    </span>
+                                        800р.
+                                </div>
+                                <span class="goods_item__info-price_old-price">
+                                    800р.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="master-info-container">                                
+                        <div class="master-info">
+                            <div class="master-info_avatar">
+                                <img src="assets/images/header/user-avatar.png" alt="">
+                            </div>
+                            <div class="master-info_master-nickname-wrapper">
+                                <div class="master-info_master-nickname pro-status">
+                                    MANYAKHANDMADA
+                                </div>
+                                <div class="status-wrapper">
+                                    PRO
+                                </div>
+                            </div>
+                            <div class="master-info_post-stats">
+                                <div class="master-info_master-likes">
+                                    <img src="assets/images/icons/like.svg" alt="">
+                                    <span class="master-info_master-likes-count">
+                                        39
+                                    </span>
+                                </div>
+                                <div class="master-info_master-views">
+                                    <img src="assets/images/icons/views.svg" alt="">
+                                    <span class="master-info_master-views-count">
+                                        1562
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+
+                </div>
+            </div>
+            <button class="pagination_btn-more" type="button">Показать еще</button>
         </section>
-                                                            <!--Найди подарок-->
+                                                <!--Найди подарок-->
         <section class="find-present">
             <div class="find-present_container">
                 <div class="find-present_content-wrapper">
@@ -3072,31 +3638,29 @@
                 <p class="sub-title m-0 p-0">
                     Находи каждый день сотни удивительных изделия, по своему вкусу
                 </p>
-
-                <div class="section-header_btns-wrapper special_goods-section-header_btns-wrapper">
-                    <p class="section-header_btns-wrapper_text">
-                        Что бы вам хотелось?
-                    </p>
-                    <div class="section-header_switcher-wrapper">
-                        <button class="section-header_switcher-btn" type="button">
-                            Уютное
-                        </button>
-                        <button class="section-header_switcher-btn" type="button">
-                            Полезное
-                        </button>
-                        <button class="section-header_switcher-btn" type="button">
-                            Самые дешевые изделия   
-                        </button>
-                        <button class="section-header_switcher-btn" type="button">
-                            Приятные мелочи
-                        </button>
-                        <button class="section-header_switcher-btn" type="button">
-                            Что-то для ребенка
-                        </button>
-                    </div>
-                </div>
             </header>
-            
+            <div class="section-header_btns-wrapper special_goods-section-header_btns-wrapper">
+                <p class="section-header_btns-wrapper_text">
+                    Что бы вам хотелось?
+                </p>
+                <div class="section-header_switcher-wrapper">
+                    <button class="section-header_switcher-btn" type="button">
+                        Уютное
+                    </button>
+                    <button class="section-header_switcher-btn" type="button">
+                        Полезное
+                    </button>
+                    <button class="section-header_switcher-btn" type="button">
+                        Самые дешевые изделия   
+                    </button>
+                    <button class="section-header_switcher-btn" type="button">
+                        Приятные мелочи
+                    </button>
+                    <button class="section-header_switcher-btn" type="button">
+                        Что-то для ребенка
+                    </button>
+                </div>
+            </div>      
             <div class="special-goods_wrapper">
                 <div class="goods_item auction_item auction_item-inactive">                        
                     <div class="goods_item-main-content">
@@ -3731,7 +4295,7 @@
             </div>
             <button class="pagination_btn-more" type="button">Показать еще</button>
         </section>
-        <!-- Биржа заявок -->
+                                                <!-- Биржа заявок -->
         <section class="burse">
             <div class="burse-content_wrapper">
                 <header class="burse-header section-header">
@@ -3751,7 +4315,7 @@
                             </div>
                         </div>
                         <button class="section-header_btn header-green_btn" type="button">
-                            + Добавить заявку
+                           Добавить заявку
                         </button>
                     </div>
                     <p class="sub-title m-0 p-0">
@@ -4083,13 +4647,13 @@
                             Показать еще
                         </button>
                         <button class="section-header_btn header-green_btn burse-add_btn" type="button">
-                            + Добавить заявку
+                            Добавить заявку
                         </button>
                     </div>
                 
             </div>
         </section>
-        <!-- Лучшие мастера -->
+                                                <!-- Лучшие мастера -->
         <section class="top-masters">
             <header class="top-masters-header section-header">
                 <div class="top-masters-titles">
@@ -4100,7 +4664,7 @@
                 </div>
                 <div class="header-btn_wrapper">
                     <button type="button" class="section-header_btn header-green_btn">
-                        + Стать мастером
+                        Стать мастером
                     </button>
                     <a class="section-header_btn">
                         Все мастера
@@ -4742,7 +5306,7 @@
                 </div>
             </div>
         </section>
-        <!-- Новые мастера -->
+                                                <!-- Новые мастера -->
         <section class="new-masters">
             <header class="new-masters-header section-header">
                 <div class="header-top">
@@ -4803,7 +5367,7 @@
            
             </ul>
         </section>
-        <!-- преимущества -->
+                                                <!-- преимущества -->
         <section class="advantages">
             <img src="assets/images/advantages/Rectangle.png" alt="" class="advantages__img">
             <div class="advantages__content">
@@ -4850,6 +5414,7 @@
                 </div>
             </div>
         </section>
+                                                <!-- Золотые руки -->
         <section class="gold-hands">
             <div class="gold-hands__content">
                 <div class="gold-hands__title-wrapper">
@@ -4900,12 +5465,890 @@
                         Присоединиться к пуговкам
                     </button>
                 </div>
+            </div>
         </section>
+                                                <!-- Разделяющая линия -->
         <div class="underline type-2"></div>
+                                                <!-- Будь в теме -->
+        <section class="topic">
+            <header class="topic__header">
+                <h2 class="topic__title">
+                    Будь в теме
+                </h2>
+                <img src="assets/images/icons/coffe.png" alt="" class="topic__logo">
+            </header>
+            <div class="topic__post-container">
+                <div class="topic__filter-wrapper">
+                    <button class="topic__filter topic__filter_active">
+                        Все
+                    </button>
+
+                    <button class="topic__filter">
+                        Статьи
+                    </button>
+
+                    <button class="topic__filter">
+                        Блог мастеров
+                    </button>
+
+                    <button class="topic__filter">
+                        Новости
+                    </button>
+                </div>
+                <div class="topic__slider">
+                    <div class="topic__post-wrapper swiper-wrapper">
+                        <div class="post-item topic__post-item swiper-slide">
+                            <div class="post-item__content">
+                                <h3 class="post-item__title">
+                                    Изготовить кошелек по референсным фотографиям
+                                </h3>
+                                <p class="post-item__text">
+
+                                    Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                                </p>
+                                <div class="post-item__post-stats">
+                                    <div class="post-item__master-info">
+                                        <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                        <span class="post-item__master-name">
+                                            Пуговки
+                                        </span>
+                                    </div>
+                                    <div class="post-item__post-info">
+                                        <span class="post-item__post-time">
+                                            18.02.2020 в 14:32
+                                        </span>
+                                        <div class="post-item__post-views">
+                                            <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                            <span class="post-item__views-count">
+                                                1562
+                                            </span>
+                                        </div>
+                                    </div>       
+                                    <span class="post-item__post-type post-item__post-type_news">
+                                        Новости
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="post-item__post-img-wrapper">
+                                <img src="assets/images/topic/post.png" alt="" class="post-item__post-img">
+                            </div>
+                        </div>
+                        <div class="post-item topic__post-item swiper-slide">
+                            <div class="post-item__content">
+                                <h3 class="post-item__title">
+                                    Изготовить кошелек по референсным фотографиям
+                                </h3>
+                                <p class="post-item__text">
+                                    Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                                </p>
+                                <div class="post-item__post-stats">
+                                    <div class="post-item__master-info">
+                                        <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                        <span class="post-item__master-name">
+                                            Пуговки
+                                        </span>
+                                    </div>
+                                    <div class="post-item__post-info">
+                                        <span class="post-item__post-time">
+                                            18.02.2020 в 14:32
+                                        </span>
+                                        <div class="post-item__post-views">
+                                            <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                            <span class="post-item__views-count">
+                                                1562
+                                            </span>
+                                        </div>
+                                    </div>       
+                                    <span class="post-item__post-type post-item__post-type_blog">
+                                        Блог мастеров
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-item topic__post-item swiper-slide">
+                            <div class="post-item__content">
+                                <h3 class="post-item__title">
+                                    Изготовить кошелек по референсным фотографиям
+                                </h3>
+                                <p class="post-item__text">
+
+                                    Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                                </p>
+                                <div class="post-item__post-stats">
+                                    <div class="post-item__master-info">
+                                        <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                        <span class="post-item__master-name">
+                                            Пуговки
+                                        </span>
+                                    </div>
+                                    <div class="post-item__post-info">
+                                        <span class="post-item__post-time">
+                                            18.02.2020 в 14:32
+                                        </span>
+                                        <div class="post-item__post-views">
+                                            <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                            <span class="post-item__views-count">
+                                                1562
+                                            </span>
+                                        </div>
+                                    </div>       
+                                    <span class="post-item__post-type post-item__post-type_articles">
+                                        Новости
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="post-item__post-img-wrapper">
+                                <img src="assets/images/topic/post2.png" alt="" class="post-item__post-img">
+                            </div>
+                        </div>
+                        <div class="post-item topic__post-item swiper-slide">
+                            <div class="post-item__content">
+                                <h3 class="post-item__title">
+                                    Изготовить кошелек по референсным фотографиям
+                                </h3>
+                                <p class="post-item__text">
+
+                                    Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                                </p>
+                                <div class="post-item__post-stats">
+                                    <div class="post-item__master-info">
+                                        <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                        <span class="post-item__master-name">
+                                            Пуговки
+                                        </span>
+                                    </div>
+                                    <div class="post-item__post-info">
+                                        <span class="post-item__post-time">
+                                            18.02.2020 в 14:32
+                                        </span>
+                                        <div class="post-item__post-views">
+                                            <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                            <span class="post-item__views-count">
+                                                1562
+                                            </span>
+                                        </div>
+                                    </div>       
+                                    <span class="post-item__post-type post-item__post-type_news">
+                                        Новости
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="post-item__post-img-wrapper">
+                                <img src="assets/images/topic/post.png" alt="" class="post-item__post-img">
+                            </div>
+                        </div>
+                        <div class="post-item topic__post-item swiper-slide">
+                            <div class="post-item__content">
+                                <h3 class="post-item__title">
+                                    Изготовить кошелек по референсным фотографиям
+                                </h3>
+                                <p class="post-item__text">
+                                    Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                                </p>
+                                <div class="post-item__post-stats">
+                                    <div class="post-item__master-info">
+                                        <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                        <span class="post-item__master-name">
+                                            Пуговки
+                                        </span>
+                                    </div>
+                                    <div class="post-item__post-info">
+                                        <span class="post-item__post-time">
+                                            18.02.2020 в 14:32
+                                        </span>
+                                        <div class="post-item__post-views">
+                                            <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                            <span class="post-item__views-count">
+                                                1562
+                                            </span>
+                                        </div>
+                                    </div>       
+                                    <span class="post-item__post-type post-item__post-type_blog">
+                                        Блог мастеров
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-item topic__post-item swiper-slide">
+                            <div class="post-item__content">
+                                <h3 class="post-item__title">
+                                    Изготовить кошелек по референсным фотографиям
+                                </h3>
+                                <p class="post-item__text">
+
+                                    Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                                </p>
+                                <div class="post-item__post-stats">
+                                    <div class="post-item__master-info">
+                                        <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                        <span class="post-item__master-name">
+                                            Пуговки
+                                        </span>
+                                    </div>
+                                    <div class="post-item__post-info">
+                                        <span class="post-item__post-time">
+                                            18.02.2020 в 14:32
+                                        </span>
+                                        <div class="post-item__post-views">
+                                            <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                            <span class="post-item__views-count">
+                                                1562
+                                            </span>
+                                        </div>
+                                    </div>       
+                                    <span class="post-item__post-type post-item__post-type_articles">
+                                        Новости
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="post-item__post-img-wrapper">
+                                <img src="assets/images/topic/post2.png" alt="" class="post-item__post-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper d-none d-md-flex">
+                        <button type="button" class="main-btn-next slider-btn btn-next position-relative">
+                            <img src="assets/images/icons/arrow-left.svg" alt="">
+                        </button>
+                        <button type="button" class="main-btn-prev slider-btn btn-prev position-relative">
+                                <img src="assets/images/icons/right-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="topic__adaptive-post-wrapper">
+                <div class="post-item topic__post-item swiper-slide">
+                    <div class="post-item__content">
+                        <h3 class="post-item__title">
+                            Изготовить кошелек по референсным фотографиям
+                        </h3>
+                        <p class="post-item__text">
+
+                            Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                        </p>
+                        <div class="post-item__post-stats">
+                            <div class="post-item__master-info">
+                                <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                <span class="post-item__master-name">
+                                    Пуговки
+                                </span>
+                            </div>
+                            <div class="post-item__post-info">
+                                <span class="post-item__post-time">
+                                    18.02.2020 в 14:32
+                                </span>
+                                <div class="post-item__post-views">
+                                    <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                    <span class="post-item__views-count">
+                                        1562
+                                    </span>
+                                </div>
+                            </div>       
+                            <span class="post-item__post-type post-item__post-type_news">
+                                Новости
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-item__post-img-wrapper">
+                        <img src="assets/images/topic/post.png" alt="" class="post-item__post-img">
+                    </div>
+                </div>
+                <div class="post-item topic__post-item swiper-slide">
+                    <div class="post-item__content">
+                        <h3 class="post-item__title">
+                            Изготовить кошелек по референсным фотографиям
+                        </h3>
+                        <p class="post-item__text">
+                            Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                        </p>
+                        <div class="post-item__post-stats">
+                            <div class="post-item__master-info">
+                                <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                <span class="post-item__master-name">
+                                    Пуговки
+                                </span>
+                            </div>
+                            <div class="post-item__post-info">
+                                <span class="post-item__post-time">
+                                    18.02.2020 в 14:32
+                                </span>
+                                <div class="post-item__post-views">
+                                    <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                    <span class="post-item__views-count">
+                                        1562
+                                    </span>
+                                </div>
+                            </div>       
+                            <span class="post-item__post-type post-item__post-type_blog">
+                                Блог мастеров
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item topic__post-item swiper-slide">
+                    <div class="post-item__content">
+                        <h3 class="post-item__title">
+                            Изготовить кошелек по референсным фотографиям
+                        </h3>
+                        <p class="post-item__text">
+
+                            Есть фотографии того что хотелось бы. Материал скорее всего кожа натуральная. Строчка обязательно красная, так же очень нравится пуговки. Стоимость
+                        </p>
+                        <div class="post-item__post-stats">
+                            <div class="post-item__master-info">
+                                <img src="assets/images/header/logo.svg" alt="" class="post-item__master-avatar">
+                                <span class="post-item__master-name">
+                                    Пуговки
+                                </span>
+                            </div>
+                            <div class="post-item__post-info">
+                                <span class="post-item__post-time">
+                                    18.02.2020 в 14:32
+                                </span>
+                                <div class="post-item__post-views">
+                                    <img src="assets/images/icons/views.svg" alt="" class="post-item__views-icon">
+                                    <span class="post-item__views-count">
+                                        1562
+                                    </span>
+                                </div>
+                            </div>       
+                            <span class="post-item__post-type post-item__post-type_articles">
+                                Новости
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-item__post-img-wrapper">
+                        <img src="assets/images/topic/post.png" alt="" class="post-item__post-img">
+                    </div>
+                </div>
+            </div>
+            <div class="topic__links-wrapper links-wrapper">
+                <span class="links__text">
+                    Следите за пуговками везде
+                </span>
+                <a href="" class="link-item topic__link topic__link_blue">
+                    <img src="assets/images/icons/vk.png" alt="" class="link-item__img">
+                </a>
+                <a href="" class="link-item topic__link topic__link_yellow">
+                    <img src="assets/images/icons/Odnoklasniki.png" alt="" class="link-item__img">
+                </a>
+                <a href="" class="link-item topic__link topic__link_blue">
+                    <img src="assets/images/icons/Facebook.png" alt="" class="link-item__img">
+                </a>
+                <a href="" class="link-item topic__link topic__link_red">
+                    <img src="assets/images/icons/insta.png" alt="" class="link-item__img">
+                </a>
+            </div>
+        </section>
+                                                <!-- Вы смотрели -->
+        <section class="views-post">
+            <header class="views-post__header">
+                <h2 class="views-post__title">Вы смотрели</h2>
+                <button class="views-post__btn d-sm-block d-none">
+                    Показать все
+                </button>
+            </header>
+            <div class="views-post__post-wrapper  ">
+                <div class="view-post__item">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/1.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-price__current-price">
+                            1600р.
+                        </span>
+                        <span class="view-price__old-price">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/2.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-post__current-price view-post__current-price_discounted">
+                            600р.
+                        </span>
+                        <span class="view-post__old-price">
+                            1600р.
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/3.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-price__current-price">
+                            1600р.
+                        </span>
+                        <span class="view-price__old-price">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/1.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-price__current-price">
+                            1600р.
+                        </span>
+                        <span class="view-price__old-price">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/2.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-post__current-price view-post__current-price_discounted">
+                            600р.
+                        </span>
+                        <span class="view-post__old-price">
+                            1600р.
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/3.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-price__current-price">
+                            1600р.
+                        </span>
+                        <span class="view-price__old-price">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item  d-sm-none d-xl-block d-flex">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/1.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-price__current-price">
+                            1600р.
+                        </span>
+                        <span class="view-price__old-price">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item  d-sm-none d-xl-block d-flex">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/2.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-post__current-price view-post__current-price_discounted">
+                            600р.
+                        </span>
+                        <span class="view-post__old-price">
+                            1600р.
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item  d-sm-none d-xl-block d-flex">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/3.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-price__current-price">
+                            1600р.
+                        </span>
+                        <span class="view-price__old-price">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item  d-sm-none d-xl-block d-flex">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/1.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-price__current-price">
+                            1600р.
+                        </span>
+                        <span class="view-price__old-price">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item  d-sm-none d-xl-block d-flex">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/2.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-post__current-price view-post__current-price_discounted">
+                            600р.
+                        </span>
+                        <span class="view-post__old-price">
+                            1600р.
+                        </span>
+                    </div>
+                </div>
+                <div class="view-post__item  d-sm-none d-xl-block d-flex">
+                    <a href="" class="view__link">
+                        <img src="assets/images/views-post/3.png" alt="" class="view-post__img">
+                    </a>
+                    <div class="view-post__prices">
+                        <span class="view-price__current-price">
+                            1600р.
+                        </span>
+                        <span class="view-price__old-price">
+                            
+                        </span>
+                    </div>
+                </div>  
+            </div>
+            <button class="views-post__btn d-block d-sm-none mt-2">
+                Показать все
+            </button>
+        </section>
+                                                <!-- Пожелания -->
+        <section class="proposal">
+            <div class="proposal__img-wrapper">
+                <img src="assets/images/proposal/img.png" alt="" class="proposal__img">
+            </div>
+            <div class="proposal__content">
+               <div class="proposal__text-content">
+                    <div class="proposal__rating">
+                        <img src="assets/images/icons/Star4.svg" alt="" class="proposal__star">
+                        <img src="assets/images/icons/Star4.svg" alt="" class="proposal__star">
+                        <img src="assets/images/icons/Star4.svg" alt="" class="proposal__star">
+                        <img src="assets/images/icons/Star4.svg" alt="" class="proposal__star">
+                        <img src="assets/images/icons/Star4.svg" alt="" class="proposal__star">
+                    </div>
+                    <h3 class="proposal__title">
+                        Есть пожелания ии предложения?
+                    </h3>
+                    <p class="proposal__text">
+                        Нам важно ваше мнение. Если у Вас есть идеи, как сделать Пуговки еще лучше и удобнее. напишите нам, мы будем очень благодарны!
+                    </p>
+               </div>
+               <button class="write-us proposal__btn">
+                    <span class="write-us__img-wrapper">
+                        <img src="assets/images/proposal/write.png" alt="" class="write-us__img">
+                    </span>
+                    <span class="write-us__text">
+                        Напиcать нам
+                    </span>
+               </button>
+            </div>
+        </section>
+                                                <!-- Описание -->
+        <section class="discription">
+            <p class="discription__text">Эксклюзивные вещи ручной работы были популярны во все времена. Это относилось ко всему: к предметам интерьера, одежде, аксессуарам .Hand made изделия всегда были в моде. Они ценилась в первую очередь за то, что изготовленные вещи были эксклюзивными, качественными.
+            </p>
+            <p class="discription__text"> В изделия мастер вкладывал кропотливый труд, фантазию, любовь к своему творчеству и частичку души.</p>
+            <p class="discription__text">
+            Стоит отметить, что hand made изделия отличаются высоким качеством. Мастера постоянно заботятся о своей репутации .Им важно сделать вещь качественно, чтобы ее приобрели и порекомендовали друзьям. Материалы проходят тщательный отбор по составу и надежности.
+            </p>
+            <p class="discription__text">Эксклюзивные вещи ручной работы были популярны во все времена. Это относилось ко всему: к предметам интерьера, одежде, аксессуарам .Hand made изделия всегда были в моде. Они ценилась в первую очередь за то, что изготовленные вещи были эксклюзивными, качественными.</p>
+            <p class="discription__text"> Стоит отметить, что hand made изделия отличаются высоким качеством. Мастера постоянно заботятся о своей репутации .Им важно сделать вещь качественно, чтобы ее приобрели и порекомендовали друзьям. Материалы проходят тщательный отбор по составу и надежности.</p>
+            <p class="discription__text">Такой подход объясняет популярность творчества у ценителей уникальной продукции.</p>
+        </section>
     </main>
     <!-- footer -->
     <footer class="main-footer">
-
+        <div class="main-footer-content">
+            <div class="main-footer-head main-footer__item">
+                <div class="main-footer-body__info">
+                    <h2 class="main-footer-body__title">
+                        <span class="main-footer-body__title_green">
+                            Маркетплейс
+                        </span>
+                        авторских изделий
+                    </h2>
+                    <div class="pugovki-stats__item">
+                        <div class="pugovki-stats__logo">
+                            <img src="assets/images/footer/logo.png" alt="">
+                        </div>
+                        <div class="pugovki-stats__text">
+                            На пуговках уже
+                        </div>
+                    </div>
+                    <p class="main-footer-body__copiright">
+                        © 2020 Пуговки
+                    </p>
+                    <p class="main-footer-body__rules">
+                        Все права защищены
+                    </p>
+                    <a href="" class="main-footer-body__link">
+                        Политика конфиденциальности
+                    </a>
+                    <div class="main-footer-body__links-wrapper links-wrapper">
+                        <a href="" class="link-item topic__link topic__link_blue">
+                            <img src="assets/images/icons/vk.png" alt="" class="link-item__img">
+                        </a>
+                        <a href="" class="link-item topic__link topic__link_yellow">
+                            <img src="assets/images/icons/Odnoklasniki.png" alt="" class="link-item__img">
+                        </a>
+                        <a href="" class="link-item topic__link topic__link_blue">
+                            <img src="assets/images/icons/Facebook.png" alt="" class="link-item__img">
+                        </a>
+                        <a href="" class="link-item topic__link topic__link_red">
+                            <img src="assets/images/icons/insta.png" alt="" class="link-item__img">
+                        </a>
+                    </div>
+                    <div class="main-footer-body__item creator-item creator-979">
+                        <span class="creator-item__title">Разработка сайта</span>
+                                <a href="" class="creator-item__link">
+                                    <img src="assets/images/footer/itjust.png   " alt="" class="creator-item__img">
+                            </a>
+                    </div>
+                </div>
+                <div class="main-footer-head__stats pugovki-stats">
+                    <div class="pugovki-stats__item pugovki-stats__item_orange pugovki__text">
+                        <div class="pugovki-stats__logo">
+                            <img src="assets/images/footer/logo.png" alt="">
+                        </div>
+                        <div class="pugovki-stats__text">
+                            На пуговках <br>
+                            уже
+                        </div>
+                    </div>
+                    <div class="pugovki-stats__item pugovki-stats__item_green pugovki-stats__item_masters">
+                        <div class="pugovki-stats__number-wrapper">
+                            <div class="pugovki-stats__number">
+                                3
+                            </div>
+                            <div class="pugovki-stats__number">
+                                098
+                            </div>
+                        </div>
+                        <div class="pugovki-stats__text">
+                            Талантливых <br><a class="pugovki-stats__link">
+                                Мастеров
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pugovki-stats__item  pugovki-stats__item_orange pugovki-stats__item_users">
+                        <div class="pugovki-stats__number-wrapper">
+                            <div class="pugovki-stats__number">
+                                15
+                            </div>
+                            <div class="pugovki-stats__number">
+                                030
+                            </div>
+                            <div class="pugovki-stats__number">
+                                728
+                            </div>
+                        </div>
+                        <div class="pugovki-stats__text">
+                            Пользователей
+                        </div>
+                    </div>
+                    <button class="main-footer-head__btn main-footer-head__btn_orange main-footer-head__btn-1550">
+                        Присоединиться
+                    </button>
+                </div>
+                <button class="main-footer-head__btn main-footer-head__btn_orange main-footer-head__btn-767">
+                    Присоединиться
+                </button>
+                <p class="main-footer-body__copiright main-footer-body__copiright_767">
+                    © 2020 Пуговки
+                </p>
+                <p class="main-footer-body__rules main-footer-body__rules_767">
+                    Все права защищены
+                </p>
+                <a href="" class="main-footer-body__link main-footer-body__link_767">
+                    Политика конфиденциальности
+                </a>
+                <div class="main-footer-body__links-wrapper links-wrapper">
+                    <a href="" class="link-item topic__link topic__link_blue">
+                        <img src="assets/images/icons/vk.png" alt="" class="link-item__img">
+                    </a>
+                    <a href="" class="link-item topic__link topic__link_yellow">
+                        <img src="assets/images/icons/Odnoklasniki.png" alt="" class="link-item__img">
+                    </a>
+                    <a href="" class="link-item topic__link topic__link_blue">
+                        <img src="assets/images/icons/Facebook.png" alt="" class="link-item__img">
+                    </a>
+                    <a href="" class="link-item topic__link topic__link_red">
+                        <img src="assets/images/icons/insta.png" alt="" class="link-item__img">
+                    </a>
+                </div>
+                <div class="main-footer-body__item creator-item creator-767">
+                    <span class="creator-item__title">Разработка сайта</span>
+                            <a href="" class="creator-item__link">
+                                <img src="assets/images/footer/itjust.png   " alt="" class="creator-item__img">
+                        </a>
+                </div>
+            </div>
+            <div class="main-footer-body main-footer__item">
+                <div class="main-footer-body__info">
+                    <h2 class="main-footer-body__title">
+                        <span class="main-footer-body__title_green">
+                            Маркетплейс
+                        </span>
+                        авторских изделий
+                    </h2>
+                    <p class="main-footer-body__copiright">
+                        © 2020 Пуговки
+                    </p>
+                    <p class="main-footer-body__rules">
+                        Все права защищены
+                    </p>
+                    <a href="" class="main-footer-body__link">
+                        Политика конфиденциальности
+                    </a>
+                    <div class="main-footer-body__links-wrapper links-wrapper">
+                        <a href="" class="link-item topic__link topic__link_blue">
+                            <img src="assets/images/icons/vk.png" alt="" class="link-item__img">
+                        </a>
+                        <a href="" class="link-item topic__link topic__link_yellow">
+                            <img src="assets/images/icons/Odnoklasniki.png" alt="" class="link-item__img">
+                        </a>
+                        <a href="" class="link-item topic__link topic__link_blue">
+                            <img src="assets/images/icons/Facebook.png" alt="" class="link-item__img">
+                        </a>
+                        <a href="" class="link-item topic__link topic__link_red">
+                            <img src="assets/images/icons/insta.png" alt="" class="link-item__img">
+                        </a>
+                    </div>
+                </div>
+                <nav class="main-footer-body__nav">
+                    <div class="main-footer-body__item nav-item">
+                        <span class="nav-item__title">Каталог изделий</span>
+                        <ul class="nav-item__list">
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Дом и интерьер
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Одежда и обувь
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Украшения
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Аксесуары
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Скрупбукинг
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Красота и уход
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Куклы и игрушки
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Для детей
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Изделия со скдиками
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Новинки
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Подбор подарка
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="main-footer-body__item nav-item">
+                        <span class="nav-item__title">Мастера</span>
+                    </div>
+                    <div class="main-footer-body__item nav-item">
+                        <span class="nav-item__title">Полезная Информация</span>
+                        <ul class="nav-item__list">
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Оплата и доставка
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Блог мастеров
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Статьи
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Вопросы и ответы
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Советы для мастеров
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="main-footer-body__item nav-item">
+                        <span class="nav-item__title">О пуговках</span>
+                        <ul class="nav-item__list">
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    О сервисе
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                Написать нам
+                                </a>
+                            </li>                 
+                        </ul>
+                    </div>
+                    <div class="main-footer-body__item nav-item creator-item">
+                        <span class="nav-item__title">Разработка сайта</span>
+                        <ul class="nav-item__list">
+                            <li class="nav-item__row">
+                                <a href="" class="nav-item__link">
+                                    <img src="assets/images/footer/itjust.png   " alt="" class="nav-item__img">
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </nav>
+                <div class="main-footer-body__item creator-item creator-1919">
+                    <span class="creator-item__title">Разработка сайта</span>
+                            <a href="" class="creator-item__link">
+                                <img src="assets/images/footer/itjust.png   " alt="" class="creator-item__img">
+                        </a>
+                </div>
+            </div>
+        </div>
     </footer>
        <!-- slider swiper -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

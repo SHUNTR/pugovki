@@ -1,13 +1,19 @@
 :root{
     --mainactivecolor: #EA5729;
     --mainactivelinkcolor: #ea562997;
+    --mainyellowcolor: #ffcb14;
     --mainactiveopacitycolor: #ea562931;
     --maingreencolor:  #85BA40;
     --maintextcolor :  #1A1A1A;
+    --footercolor:rgb(8, 8, 8);
     --navactivecolor: #fff;
     --inputbg:#F1F3F4;
     --levelfour: #8D8D8D;
+    --footerline:#313131;
     --colorgray:#9199a0;
     --sectionbg:#fad7c949;
+    --colorbluebg:#dee9f7;
+    --coloryellowbg:#fff8e6;
+    --colorredbg:#ffe8e8;
 
 }
